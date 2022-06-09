@@ -12,12 +12,24 @@
 
 // Challenge 2
 // Use a for statement to log to the console a complete sentence stating the weather using the Array below:
-weather_options = ["sunny", "snowy", "freezing", "partly cloudy", "drizzly"]
+  var weather_options = ["sunny", "snowy", "freezing", "partly cloudy", "drizzly"];
+  var nice = weather_options[0];
+  var wet = weather_options[4];
 
+  for (var i = 0; i < weather_options.length; i++) {
+    console.log('Today is ' + nice + ' with a chance of ' + wet + ' temps')
+  };
 
 // Challenge 3
 // Use a for statement to log to the console only the words that are exactly 3 characters in length
-words = ["car", "bike", "bus", "van", "scooter", "truck", "rv"]
+  var words = ["car", "bike", "bus", "van", "scooter", "truck", "rv"];
+
+    for (var i = 0; i < words.length; i++) {
+      if (words[i].length === 3) {
+        console.log(words[i])
+      }
+    };
+
 
 // 📹 Record yourself live-coding and talking through any ONE of the challenges.
   // The recording doesn't have to be the first time you are solving the problem.
